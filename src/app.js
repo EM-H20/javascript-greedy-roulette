@@ -20,11 +20,9 @@ import {
 
 betButton.addEventListener("click", handleBetClick);
 
-stopButton.addEventListener("click", () => {});
+stopButton.addEventListener("click", handleStopClick);
 
-restartButton.addEventListener("click", () => {
-  handleRestartClick;
-});
+restartButton.addEventListener("click", handleRestartClick);
 
 const roulette = new Roulette();
 
@@ -64,6 +62,10 @@ function handleBetClick() {
   disableButtons();
   showSpinning();
   setTimeout(() => handleBetResult(color, amount), 2000);
+}
+
+function handleStopClick() {
+  showEndGame(roulette.balance, roulette.round);
 }
 
 function handleRestartClick() {

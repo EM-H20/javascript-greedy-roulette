@@ -3,7 +3,7 @@ export const NUMBER_OF_SLOTS = 40;
 
 export const COLOR_REWARD_RATE = {
   YELLOW: 1,
-  GREEN: 2,
+  GREEN: 3,
   BLUE: 5,
   PURPLE: 10,
   RED: 20,
